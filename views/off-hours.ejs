@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="page off-hours">
+      <div class="card">
+        <h1>We are offline right now</h1>
+        <p><%= message || 'Our team is available Monday to Friday, from 9 AM to 5 PM.' %></p>
+        <p>Feel free to drop us an email and we will get back to you first thing next business day.</p>
+        <a class="btn" href="mailto:hello@acmesolutions.com">Email Us</a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('partials/navbar', { page }) %>
+    <main class="page services-page">
+      <header>
+        <h1>Services tailored to your goals</h1>
+        <p>Choose one or combine several — we adapt to your roadmap.</p>
+      </header>
+      <section class="service-list">
+        <article>
+          <img src="https://picsum.photos/id/20/400/250" alt="Product Discovery" class="service-img">
+          <div class="service-content">
+            <h2>Product Discovery</h2>
+            <p>
+              Workshops, user interviews, and rapid prototyping sessions that uncover real user
+              problems and validate market fit before we write a single line of code.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/id/3/400/250" alt="Custom Development" class="service-img">
+          <div class="service-content">
+            <h2>Custom Development</h2>
+            <p>
+              Cross-functional squads delivering web apps, APIs, and integrations using battle-tested
+              processes, CI/CD pipelines, and transparent reporting cadences.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/id/6/400/250" alt="Growth & Care" class="service-img">
+          <div class="service-content">
+            <h2>Growth & Care</h2>
+            <p>
+              Post-launch optimization, A/B testing, performance tuning, and long-term maintenance SLAs
+              to keep your platform fast and secure.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="process-timeline">
+        <p class="eyebrow">How we work</p>
+        <h2>The sprint rhythm that keeps teams aligned</h2>
+        <div class="timeline">
+          <div class="timeline-step">
+            <span class="step-index">01</span>
+            <h3>Research & Align</h3>
+            <p>Stakeholder interviews, tech audits, and analytics deep dives uncover the real constraints.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-index">02</span>
+            <h3>Co-create</h3>
+            <p>Design + engineering pair to prototype, validate, and adjust scope in tight feedback loops.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-index">03</span>
+            <h3>Build & Automate</h3>
+            <p>Modular code, CI/CD, and observability baked in from sprint one for confident releases.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-index">04</span>
+            <h3>Launch & Evolve</h3>
+            <p>Progressive rollouts, experimentation, and growth playbooks ensure the product keeps compounding.</p>
+          </div>
+        </div>
+      </section>
+      <section class="toolkit">
+        <p class="eyebrow">Favorite stack</p>
+        <h2>Choosing the right tools for every challenge</h2>
+        <div class="badge-wrap">
+          <span class="badge">Node.js</span>
+          <span class="badge">Express</span>
+          <span class="badge">Next.js</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">Tailwind</span>
+          <span class="badge">AWS</span>
+          <span class="badge">Docker</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

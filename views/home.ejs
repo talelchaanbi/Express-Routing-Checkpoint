@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('partials/navbar', { page }) %>
+    <main class="page home-page">
+      <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/48/1200/600'); color: white;">
+        <h1>Building Digital Products That Work</h1>
+        <p style="color: #f0f0f0;">
+          We are a boutique agency helping startups and enterprises launch reliable, scalable,
+          and user-friendly web experiences.
+        </p>
+        <a class="btn" href="/services">See What We Do</a>
+      </section>
+      <section class="feature-grid">
+        <article>
+          <img src="https://picsum.photos/id/180/400/250" alt="Strategy" class="feature-img">
+          <h3>Strategy</h3>
+          <p>We turn ideas into executable roadmaps backed by research and measurable KPIs.</p>
+        </article>
+        <article>
+          <img src="https://picsum.photos/id/119/400/250" alt="Design" class="feature-img">
+          <h3>Design</h3>
+          <p>Experience-led UI/UX design that keeps users engaged and coming back for more.</p>
+        </article>
+        <article>
+          <img src="https://picsum.photos/id/60/400/250" alt="Engineering" class="feature-img">
+          <h3>Engineering</h3>
+          <p>Robust full-stack development with clean code, automation, and performance in mind.</p>
+        </article>
+      </section>
+      <section class="logo-marquee" aria-label="Client logos">
+        <div class="marquee-track">
+          <span>Figma</span>
+          <span>Stripe</span>
+          <span>Vercel</span>
+          <span>Shopify</span>
+          <span>Notion</span>
+          <span>Webflow</span>
+          <span>Algolia</span>
+        </div>
+      </section>
+      <section class="stats-band" aria-label="Key metrics">
+        <article class="stat-card">
+          <p class="stat-number">120+</p>
+          <p>Products launched</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number">48 hrs</p>
+          <p>Average kickoff time</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number">94%</p>
+          <p>Client retention rate</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-number">15</p>
+          <p>Countries partnered</p>
+        </article>
+      </section>
+      <section class="testimonials">
+        <header>
+          <p class="eyebrow">What partners say</p>
+          <h2>“They feel like an in-house team, just sharper.”</h2>
+        </header>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p class="quote">
+              “Acme helped us ship a complex fintech platform in record time without sacrificing polish or compliance.”
+            </p>
+            <p class="author">Kenza O., COO @ FlowBank</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="quote">
+              “From discovery to growth, they’re data-obsessed and remarkably collaborative.”
+            </p>
+            <p class="author">Leo M., Head of Product @ Northstar</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="quote">
+              “We rely on their team for every major launch — they always deliver stable, elegant experiences.”
+            </p>
+            <p class="author">Sara B., Digital Director @ NovaCare</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

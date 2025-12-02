@@ -1,0 +1,28 @@
+{
+  "name": "express-routing-checkpoint",
+  "version": "1.0.0",
+  "description": "Express.js site with working-hours middleware, EJS views, and custom styling.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "routing"
+  ],
+  "author": "Talel Chaanbi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talelchaanbi/Express-Routing-Checkpoint.git"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

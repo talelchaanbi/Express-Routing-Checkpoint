@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('partials/navbar', { page }) %>
+    <main class="page contact-page">
+      <header>
+        <h1>We would love to hear from you</h1>
+        <p>Tell us about your next project or ask any question — we reply within one business day.</p>
+      </header>
+      <section class="contact-grid">
+        <div class="contact-item">
+          <img src="https://picsum.photos/id/1033/400/200" alt="Visit Us">
+          <h2>Visit</h2>
+          <p>35 Innovation Avenue<br />Tunis, Tunisia</p>
+        </div>
+        <div class="contact-item">
+          <img src="https://picsum.photos/id/1060/400/200" alt="Call Us">
+          <h2>Call</h2>
+          <p><a href="tel:+2165551234">+216 555 1234</a></p>
+        </div>
+        <div class="contact-item">
+          <img src="https://picsum.photos/id/1059/400/200" alt="Email Us">
+          <h2>Email</h2>
+          <p><a href="mailto:hello@acmesolutions.com">hello@acmesolutions.com</a></p>
+        </div>
+      </section>
+      <section class="contact-flex">
+        <div class="contact-form">
+          <p class="eyebrow">Tell us more</p>
+          <h2>Share a quick brief and we will follow up within 24 hours.</h2>
+          <form action="mailto:projects@acmesolutions.com" method="post" enctype="text/plain">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Amira Ben Said" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="amira@example.com" required>
+            <label for="budget">Budget range</label>
+            <input type="text" id="budget" name="budget" placeholder="e.g. $15k - $30k">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Goals, deadlines, tech stack preferences..."></textarea>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+        <div class="map-card">
+          <img src="https://picsum.photos/id/1011/600/400" alt="Studio space" />
+          <div class="map-meta">
+            <h3>Studio hours</h3>
+            <p>Mon - Fri · 9 AM to 5 PM CET</p>
+            <h3>Drop by for a coffee</h3>
+            <p>Book a slot and meet the squad IRL.</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-card">
+        <h2>Start a conversation</h2>
+        <p>
+          Send us a short brief and we will schedule a discovery call with the right experts from our
+          team.
+        </p>
+        <a class="btn" href="mailto:projects@acmesolutions.com">projects@acmesolutions.com</a>
+      </section>
+    </main>
+  </body>
+</html>

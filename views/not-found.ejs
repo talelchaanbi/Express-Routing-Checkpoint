@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('partials/navbar', { page }) %>
+    <main class="page not-found">
+      <div class="card">
+        <h1>Oops!</h1>
+        <p>The page you were looking for could not be found.</p>
+        <a class="btn" href="/">Head back home</a>
+      </div>
+    </main>
+  </body>
+</html>
